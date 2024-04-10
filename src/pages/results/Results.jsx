@@ -3,6 +3,7 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { useOptions } from "../../Context/OptionsContext";
 import { useNavigate } from "react-router-dom";
+import MyDocument from "./MyDocument";
 
 const Results = () => {
   const navigate = useNavigate();
@@ -21,8 +22,10 @@ const Results = () => {
   let message;
   if (score === 0) {
     message = "Better luck next time! 😞";
-  } else if (score >= 1 && score < 5) {
+  } else if (score >= 1 && score < questions?.length / 2) {
     message = "Not bad! 😊";
+  } else if (score >= questions?.length / 2 && score < questions?.length) {
+    message = "Almost there! Keep it up! 🚀";
   } else {
     message = "Congratulations! 🎉";
   }
@@ -92,8 +95,13 @@ const Results = () => {
               )}
             </div>
           </section>
-          <p className="font-semibold mb-2 mt-5">
+          <p className="font-semibold mb-2 mt-5 flex  justify-between">
             <span className="text-blue-600 text-2xl">History:</span>
+            <MyDocument
+              questions={questions}
+              answerPerQuestions={answerPerQuestions}
+              uniqueFinalAnswers={uniqueFinalAnswers}
+            />
           </p>
           {questions?.map((question, index) => {
             const userAnswer = answerPerQuestions[index]?.answer;
