@@ -5,7 +5,7 @@ const Home = () => {
     <>
       <section className="flex flex-col w-full     h-full items-center  mt-44  ">
         <div className="text-3xl font-semibold mb-5  w-[70%] text-center  h-fit max-md:w-full">
-          Welcome to Quiz Mind! Test your knowledge and challenge yourself with
+          Welcome to Mind Quiz! Test your knowledge and challenge yourself with
           our quizzes.
         </div>
         <Link
