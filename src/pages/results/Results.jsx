@@ -92,7 +92,7 @@ const Results = () => {
               >
                 <p className="font-semibold mb-2">Question:</p>
                 <p className="text-gray-700">{question.question}</p>
-                <div className="flex justify-between mt-3 gap-5">
+                <div className="flex justify-between mt-3 gap-5 max-xs:flex-col">
                   <div>
                     <p className="font-semibold">Your Answer:</p>
                     <p>{userAnswer}</p>
