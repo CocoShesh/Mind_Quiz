@@ -13,18 +13,18 @@ const Difficulty = () => {
     selectedNumber !== null && selectedDifficulty !== null;
   return (
     <>
-      <section className="flex flex-col w-full  border-2 justify-center h-[500px] items-center">
+      <section className="flex flex-col w-full  border-2 justify-center h-[500px]  items-center">
         {/* <section className="flex flex-col items-center w-full max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg"> */}
         <h2 className="text-xl font-semibold mb-4">Quiz Options</h2>
 
-        <div className="mb-6">
+        <div className="mb-6 max-xs:w-full max-xs:px-2">
           <p className="mb-2">Number of Questions:</p>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 max-xs:space-x-2">
             {[5, 10, 15, 20].map(num => (
               <button
                 key={num}
                 onClick={() => setSelectedNumber(num)}
-                className={` hover:bg-blue-700 text-white font-bold  capitalize w-full px-8 py-5 rounded ${
+                className={` hover:bg-blue-700 text-white font-bold  capitalize w-full  px-8 max-xs:px-0 py-5 rounded ${
                   selectedNumber === num ? "bg-[#1d4ed8]" : "bg-blue-500"
                 }`}
               >
@@ -34,14 +34,14 @@ const Difficulty = () => {
           </div>
         </div>
 
-        <div className="mb-6">
+        <div className="mb-6 max-xs:w-full max-xs:px-2 ">
           <p className="mb-2">Difficulty Level:</p>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 max-xs:space-x-2">
             {["easy", "medium", "hard"].map(level => (
               <button
                 key={level}
                 onClick={() => setSelectedDifficulty(level)}
-                className={` hover:bg-blue-700 text-white font-bold  capitalize w-full px-8 py-5 rounded ${
+                className={` hover:bg-blue-700 text-white font-bold  capitalize w-full px-8 max-xs:px-0  py-5 rounded ${
                   selectedDifficulty === level ? "bg-[#1d4ed8]" : "bg-blue-500"
                 }`}
               >
