@@ -37,7 +37,6 @@ const Quiz = () => {
       } catch (error) {
         console.log(error);
         setIsLoading(false);
-        navigate("/");
       }
     };
     fetchQuestions();

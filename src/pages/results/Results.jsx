@@ -6,7 +6,16 @@ import { useNavigate } from "react-router-dom";
 
 const Results = () => {
   const navigate = useNavigate();
-  const { score, questions, answerPerQuestions, AllfinalAnswer } = useOptions();
+  const {
+    score,
+    questions,
+    answerPerQuestions,
+    AllfinalAnswer,
+    setAllFinalAnswer,
+    setScore,
+    setQuestionIndex,
+    setAnswerPerQuestions,
+  } = useOptions();
   const [showConfirmation, setShowConfirmation] = useState(false);
 
   let message;
@@ -24,10 +33,16 @@ const Results = () => {
 
   const handleConfirmTryAgain = () => {
     setShowConfirmation(false);
-    navigate("/categories");
-    window.location.reload();
+    resetQuiz();
+    navigate("/quiz");
   };
-  //filter out the unique answers
+
+  const resetQuiz = () => {
+    setScore(0);
+    setQuestionIndex(0);
+    setAnswerPerQuestions([]);
+    setAllFinalAnswer([]);
+  };
   const uniqueFinalAnswers = Array.from(new Set(AllfinalAnswer));
   return (
     <>

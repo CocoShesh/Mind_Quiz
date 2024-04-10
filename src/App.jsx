@@ -15,7 +15,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/categories" element={<Categories />} />
             <Route path="/difficulty" element={<Difficulty />} />
-            <Route path="/quiz" element={<Quiz />} />
+            <Route path="/quiz" element={<Quiz />} errorElement={<Home />} />
             <Route path="/results" element={<Results />} />
             <Route path="*">"404 Not Found!"</Route>
           </Routes>
