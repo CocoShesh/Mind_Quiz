@@ -5,6 +5,7 @@ import Categories from "./pages/categories/Categories";
 import Difficulty from "./pages/Difficulty/Difficulty";
 import Quiz from "./pages/Quiz/Quiz";
 import Results from "./pages/results/Results";
+import NotFound from "./pages/NotFound/NotFound";
 function App() {
   return (
     <>
@@ -17,7 +18,7 @@ function App() {
             <Route path="/difficulty" element={<Difficulty />} />
             <Route path="/quiz" element={<Quiz />} errorElement={<Home />} />
             <Route path="/results" element={<Results />} />
-            <Route path="*">"404 Not Found!"</Route>
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
       </BrowserRouter>
