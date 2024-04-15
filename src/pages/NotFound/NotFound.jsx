@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NotFound = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen pb-10">
-      <img src="/assets/logos/404.svg" alt="404" className="h-[500px]" />
+      <img src="/404.svg" alt="404" className="h-[400px]" />
       <h1 className="text-3xl font-bold mb-2">404</h1>
       <p className="text-lg mb-4">Oops! Looks like you're lost.</p>
       <p className="text-lg mb-8">Let's get you back on track.</p>
