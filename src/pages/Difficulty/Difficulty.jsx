@@ -14,7 +14,6 @@ const Difficulty = () => {
   return (
     <>
       <section className="flex flex-col w-full  border-2 justify-center h-[500px]  items-center">
-        {/* <section className="flex flex-col items-center w-full max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg"> */}
         <h2 className="text-xl font-semibold mb-4">Quiz Options</h2>
 
         <div className="mb-6 max-xs:w-full max-xs:px-2">
@@ -64,7 +63,6 @@ const Difficulty = () => {
           </button>
         </Link>
       </section>
-      {/* </section> */}
     </>
   );
 };
