@@ -13,7 +13,7 @@ const Difficulty = () => {
     selectedNumber !== null && selectedDifficulty !== null;
   return (
     <>
-      <section className="flex flex-col w-full  border-2 justify-center h-[500px]  items-center">
+      <section className="flex flex-col w-full   justify-center h-[500px]  items-center">
         <h2 className="text-xl font-semibold mb-4">Quiz Options</h2>
 
         <div className="mb-6 max-xs:w-full max-xs:px-2">
