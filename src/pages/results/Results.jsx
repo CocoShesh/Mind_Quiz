@@ -50,7 +50,7 @@ const Results = () => {
   return (
     <>
       <section className="flex flex-col w-full justify-center h-full items-center max-sm:px-3 pb-10">
-        <section className="w-[500px] h-fit   max-sm:w-full mt-10 bg-white shadow-lg p-5 rounded-xl">
+        <section className="w-[500px] h-fit    max-sm:w-full mt-10 bg-white shadow-lg p-5 rounded-xl">
           <h2 className="text-xl font-semibold mb-4">Your Score: {score}</h2>
           <section className="flex flex-col items-center justify-center">
             <section style={{ width: 150, height: 150 }} className="mb-5">
@@ -62,7 +62,7 @@ const Results = () => {
               />
             </section>
             <p>{message}</p>
-            <div className="flex mt-5">
+            <div className="flex mt-5 ">
               <button
                 className="mr-4 bg-blue-500 text-white px-4 py-2 rounded-md transition duration-300 ease-in-out hover:bg-blue-600"
                 onClick={handleTryAgainClick}
@@ -115,7 +115,7 @@ const Results = () => {
               >
                 <p className="font-semibold mb-2">Question:</p>
                 <p className="text-gray-700">{question.question}</p>
-                <div className="flex justify-between mt-3 gap-5  max-xs:flex-col">
+                <div className="flex justify-between mt-3 gap-5  max-sm:flex-col">
                   <div className="w-full">
                     <p className="font-semibold">Your Answer:</p>
                     <p>{userAnswer}</p>
