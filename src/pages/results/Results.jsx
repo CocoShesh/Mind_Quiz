@@ -49,8 +49,8 @@ const Results = () => {
   const uniqueFinalAnswers = Array.from(new Set(AllfinalAnswer));
   return (
     <>
-      <section className="flex flex-col w-full justify-center h-full items-center max-sm:px-3 pb-10">
-        <section className="w-[500px] h-fit    max-sm:w-full mt-10 bg-white shadow-lg p-5 rounded-xl">
+      <section className="flex flex-col w-full justify-center h-full items-center max-md:px-3 pb-10">
+        <section className="w-[500px] h-fit    max-md:w-full mt-10 bg-white shadow-lg p-5 rounded-xl">
           <h2 className="text-xl font-semibold mb-4">Your Score: {score}</h2>
           <section className="flex flex-col items-center justify-center">
             <section style={{ width: 150, height: 150 }} className="mb-5">
