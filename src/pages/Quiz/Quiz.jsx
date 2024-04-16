@@ -85,7 +85,7 @@ const Quiz = () => {
         {selectedCategory === null ? (
           <ErrorMessage />
         ) : (
-          <section className="w-[500px] h-fit max-sm:w-full   mt-10 bg-white shadow-lg p-5 rounded-xl">
+          <section className="w-[500px] h-fit max-sm:w-full    mt-10 bg-white shadow-lg p-5 rounded-xl">
             {questions?.length > 0 && (
               <>
                 <h2>
