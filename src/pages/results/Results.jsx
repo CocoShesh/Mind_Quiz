@@ -144,7 +144,12 @@ const Results = () => {
             </>
           ) : (
             <div className="flex flex-col items-center justify-center text-center">
-              <img src="/no results.png" alt="" className="h-[200px]" />
+              <img
+                src="/no results.png"
+                alt=""
+                className="h-[200px]"
+                loading="lazy"
+              />
               <p className="mb-4">
                 Sorry, we couldn't find your results.
                 <br />
